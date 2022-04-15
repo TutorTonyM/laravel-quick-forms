@@ -1,0 +1,52 @@
+{
+    "name": "tutortonym/laravel-quick-forms",
+    "description": "Laravel Quick Forms allows you to quickly and easily Integrate a subscribe or a contact us form (or both) to your Laravel application with simple Blade components without having to create everything (models, migrations, controllers, validation, views, routes, etc...) from scratch with the option to protect them with Google reCAPTCHA v2.",
+    "type": "package",
+    "keywords": [
+        "ttm",
+        "tutortonym",
+        "tutor tony m",
+        "laravel",
+        "subscribe",
+        "newsletter",
+        "ttm-subscribe",
+        "contact",
+        "coantact form",
+        "laravel form",
+        "laravel contact form",
+        "ttm-contact",
+        "ttm-contact-form"
+    ],
+    "homepage": "https://tutortonym.com/packages/laravel/laravel-quick-forms",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TutorTonyM\\QuickForms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TutorTonyM\\QuickForms\\TtmQuickFormsServiceProvider"
+            ],
+            "aliases": {
+                "TtmQuickForms": "TutorTonyM\\QuickForms\\TtmQuickFormsServiceProvider"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Tutor Tony M",
+            "email": "tonym@tutortonym.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
