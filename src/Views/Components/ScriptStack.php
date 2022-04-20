@@ -26,7 +26,7 @@ class ScriptStack extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\script-stack.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.script-stack'
-            : 'ttm-quick-forms::script-stack';
+            : 'ttm-quick-forms::_publishable.script-stack';
 
         return view($path);
     }

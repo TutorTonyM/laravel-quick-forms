@@ -60,7 +60,7 @@ class ContactForm extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\contact-form.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.contact-form'
-            : 'ttm-quick-forms::contact-form';
+            : 'ttm-quick-forms::_non-publishable.contact-form';
 
         return view($path);
     }

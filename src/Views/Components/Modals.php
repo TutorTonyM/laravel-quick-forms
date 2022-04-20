@@ -26,7 +26,7 @@ class Modals extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\modals.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.modals'
-            : 'ttm-quick-forms::modals';
+            : 'ttm-quick-forms::_publishable.modals';
 
         return view($path);
     }

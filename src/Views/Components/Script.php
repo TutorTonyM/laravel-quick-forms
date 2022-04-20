@@ -26,7 +26,7 @@ class Script extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\script.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.script'
-            : 'ttm-quick-forms::script';
+            : 'ttm-quick-forms::_publishable.script';
 
         return view($path);
     }

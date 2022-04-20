@@ -110,7 +110,7 @@ These components can be place anywhere in the page as they are not visible until
 You can publish most files from this package. Most of them are optional but there are two that are required to make the ajax calls and to style the modals. You can publish files by using the artisan command vendor:publish as such:
 
 ```bash
-php artisan vendor:publish --provider="tutortonym/laravel-subscriber" --tag="public"
+php artisan vendor:publish --tag="ttm-quick-forms-public"
 ```
 
 The two files that are required to be published are:
@@ -120,17 +120,17 @@ The two files that are required to be published are:
 You can publish these files as a group or individually. To do so you can use the following commands:
 #### As a group
 ```bash
-php artisan vendor:publish --provider="tutortonym/laravel-subscriber" --tag="public"
+php artisan vendor:publish --tag="ttm-quick-forms-public"
 ```
 
 #### Just the Stylesheet
 ```bash
-php artisan vendor:publish --provider="tutortonym/laravel-subscriber" --tag="style-public"
+php artisan vendor:publish --tag="ttm-quick-forms-style-public"
 ```
 
 #### Just the Script
 ```bash
-php artisan vendor:publish --provider="tutortonym/laravel-subscriber" --tag="script-public"
+php artisan vendor:publish --tag="ttm-quick-forms-script-public"
 ```
 
 The style sheet will publish to /public/css/vendor/TutorTonyM/quick-forms/ttm-quick-forms.css, while the script document will publish to /public/js/vendor/TutorTonyM/quick-forms/ttm-quick-forms.js.

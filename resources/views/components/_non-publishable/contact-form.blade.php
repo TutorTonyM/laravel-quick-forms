@@ -1,10 +1,3 @@
-@props([
-'label',
-'input',
-'textarea',
-'button',
-])
-
 <form id="ttm-contact-form" class="ttm-quick-form" method="POST" action="{{ route('ttm-contact.store') }}" {{ $attributes }}>
 
     @csrf

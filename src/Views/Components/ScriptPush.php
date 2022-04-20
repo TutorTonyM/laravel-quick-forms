@@ -26,7 +26,7 @@ class ScriptPush extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\script-push.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.script-push'
-            : 'ttm-quick-forms::script-push';
+            : 'ttm-quick-forms::_publishable.script-push';
 
         return view($path);
     }

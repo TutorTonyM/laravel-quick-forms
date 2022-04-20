@@ -26,7 +26,7 @@ class StylePush extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\style-push.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.style-push'
-            : 'ttm-quick-forms::style-push';
+            : 'ttm-quick-forms::_publishable.style-push';
 
         return view($path);
     }
