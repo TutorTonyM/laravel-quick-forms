@@ -26,7 +26,7 @@ class Style extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\style.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.style'
-            : 'ttm-quick-forms::style';
+            : 'ttm-quick-forms::_publishable.style';
 
         return view($path);
     }

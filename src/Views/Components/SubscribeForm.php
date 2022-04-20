@@ -32,7 +32,7 @@ class SubscribeForm extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\subscribe-form.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms\subscribe-form'
-            : 'ttm-quick-forms::subscribe-form';
+            : 'ttm-quick-forms::_non-publishable.subscribe-form';
 
         return view($path);
     }

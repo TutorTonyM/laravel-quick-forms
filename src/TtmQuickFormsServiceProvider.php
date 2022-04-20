@@ -54,7 +54,17 @@ class TtmQuickFormsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->publishes([
-            __DIR__.'/../resources/views/components' => resource_path('views/components/vendor/TutorTonyM/quick-forms'),
+            __DIR__ . '/../resources/views/components/_publishable/subscribe-form.blade.php' =>
+                resource_path('views/components/vendor/TutorTonyM/quick-forms/subscribe-form.blade.php'),
+        ], 'ttm-quick-forms-subscribe');
+
+        $this->publishes([
+            __DIR__ . '/../resources/views/components/_publishable/contact-form.blade.php' =>
+                resource_path('views/components/vendor/TutorTonyM/quick-forms/contact-form.blade.php'),
+        ], 'ttm-quick-forms-contact');
+
+        $this->publishes([
+            __DIR__.'/../resources/views/components/_publishable' => resource_path('views/components/vendor/TutorTonyM/quick-forms'),
         ], 'ttm-quick-forms-components');
 
         $this->publishes([

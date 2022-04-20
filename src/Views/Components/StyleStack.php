@@ -26,7 +26,7 @@ class StyleStack extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\style-stack.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.style-stack'
-            : 'ttm-quick-forms::style-stack';
+            : 'ttm-quick-forms::_publishable.style-stack';
 
         return view($path);
     }

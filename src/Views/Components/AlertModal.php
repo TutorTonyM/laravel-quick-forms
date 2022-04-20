@@ -26,7 +26,7 @@ class AlertModal extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\alert-modal.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.alert-modal'
-            : 'ttm-quick-forms::alert-modal';
+            : 'ttm-quick-forms::_publishable.alert-modal';
 
         return view($path);
     }

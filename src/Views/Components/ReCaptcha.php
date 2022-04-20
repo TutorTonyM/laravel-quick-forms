@@ -26,7 +26,7 @@ class ReCaptcha extends Component
     {
         $path = File::exists(resource_path('views\components\vendor\TutorTonyM\quick-forms\re-captcha.blade.php'))
             ? 'components.vendor.TutorTonyM.quick-forms.re-captcha'
-            : 'ttm-quick-forms::re-captcha';
+            : 'ttm-quick-forms::_publishable.re-captcha';
 
         return view($path);
     }
